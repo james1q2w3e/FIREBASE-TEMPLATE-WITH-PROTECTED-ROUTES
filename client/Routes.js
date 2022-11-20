@@ -63,7 +63,7 @@ class Routes extends Component {
               <Route path='/list' component={ListForms} />
             </ProtectedRoute>
 
-            <Redirect to="/home" />
+            {/* <Redirect to="/home" /> */}
           </Switch>
         ) : (
           <Switch> {console.log('NOT logged in')}

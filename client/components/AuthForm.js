@@ -1,4 +1,5 @@
 import React, {useState} from 'react';
+import history from '../history'
 import {connect} from 'react-redux';
 import {authenticate} from '../store';
 // import { app } from '../firebaseConfig';
@@ -55,6 +56,7 @@ class firebaseLogin extends React.Component {
     // const auth = getAuth();
     signInWithEmailAndPassword(this.state.currentUser, email, password)
       .then((cred) => {
+        history.push('/home')
         console.log('user logged in:', cred.user);
       })
       .catch((e) => {
@@ -70,6 +72,7 @@ class firebaseLogin extends React.Component {
     // const auth = getAuth();
     createUserWithEmailAndPassword(this.state.currentUser, email, password)
       .then((cred) => {
+        history.push('/home')
         console.log('user logged in:', cred.user);
       })
       .catch((e) => {
