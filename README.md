@@ -1,5 +1,7 @@
 This is a template from FS-APP-TEMPLATE, but made to use FIREBASE/FIRESTORE instead of API routes and a local database. The old api routes/database files have been left in (because I don't feel like taking them out).
 
+This still has some nasty looking code, as i haven't had time to clean it up or comment it. It'll get better when i fix it.
+
 
 READ BELOW BEFORE USING:
 
